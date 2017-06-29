@@ -1,0 +1,252 @@
+/*---
+nav bar and header
+---*/
+
+body{
+  background-color: #585858;
+}
+@font-face {
+    font-family: 'bebasregular';
+    src: url('fonts/BEBAS___-webfont.eot');
+    src: url('fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BEBAS___-webfont.woff') format('woff'),
+         url('fonts/BEBAS___-webfont.ttf') format('truetype'),
+         url('fonts/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-style: normal;
+}
+.header{
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'bebasregular';
+}
+.navBar {
+    visibility: hidden;
+    background-color: #292E37;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 95px;
+    height: 10%;
+}
+.navBar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navBar a:hover{
+  background-color: #ddd;
+}
+.navButton{
+  visibility: hidden;
+  width: 50%;
+  max-width: 140px;
+}
+.submittedBy{
+  color: cyan;
+  text-decoration: none;
+  text-align: right;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.submittedBy a {
+  text-decoration: none;
+}
+.footer{
+  font-size: 10px;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  background-color: white;
+  text-align:center;
+  border-radius:20px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer a{
+  text-decoration: none;
+}
+
+/*---
+link stuff
+---*/
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: cyan;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+/*---
+post
+---*/
+.post{
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: black;
+}
+.image{
+  background-image: url("images/goodboy.jpg");
+  height:248px;
+  width: 350px;
+  float:left;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+/*---
+contact form
+---*/
+
+.contactForm {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"]
+{ font:12px "Open Sans", Helvetica; }
+
+#contact {
+	background:#d3d3d3;
+	padding:25px;
+	margin:50px 0;
+  border-radius: 8px;
+}
+
+#contact h3 {
+	color: black;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+	width:95%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:95%;
+  resize:none;
+}
+
+#contact select[type="radio"]{
+  color: cyan;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:black;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+	border-radius: 8px;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+#contact button[type="submit"]:hover {
+  opacity: .5;
+}
+/*---
+responsive nonsense
+---*/
+@media only screen and (min-width: 768px) {
+  .header{
+    margin-left: 5px;
+    margin-top: 55px;
+  }
+  .navBar {
+      visibility: visible;
+      background-color: #292E37;
+      position: fixed;
+      top:0px;
+      left:0px;
+      width: 100%;
+      max-width:100%;
+      height: 50px;
+  }
+  .navBar a {
+      float: left;
+      display:block;
+      color: white;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+  .submittedBy{
+    margin-left: 10%;
+    width: 100%;
+  }
+
+  .post{
+    margin-left: 10px;
+    padding-left: 0px;
+  }
+  .image{
+    float:left;
+    max-height: 248px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .navButton{
+    visibility: visible;
+  }
+
+}
+/*---
+post
+---*/
